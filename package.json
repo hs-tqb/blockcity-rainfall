@@ -1,19 +1,25 @@
 {
-  "name": "blockcity-rainfall",
+  "name": "rainfall",
   "version": "1.0.0",
-  "description": "blockcity rainfall",
-  "main": "index.js",
+  "description": "Nuxt.js project",
+  "author": "HS <huangshuai@utianqi.com>",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hs-tqb/blockcity-rainfall.git"
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nuxt": "^1.0.0"
   },
-  "author": "hs",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hs-tqb/blockcity-rainfall/issues"
-  },
-  "homepage": "https://github.com/hs-tqb/blockcity-rainfall#readme"
+  "devDependencies": {},
+  "config": {
+    "nuxt": {
+      "port": "3030"
+    }
+  }
 }
